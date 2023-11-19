@@ -62,7 +62,7 @@ cursor: pointer;
     content: url(./assets/pattern-divider-mobile.svg) ;
   };
   .round_button:hover{
-    box-shadow: unset;
+    box-shadow: none;
   }
 }
 
