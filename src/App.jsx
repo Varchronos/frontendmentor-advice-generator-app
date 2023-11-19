@@ -9,12 +9,10 @@ const App = () => {
   const [adviceNumber, setAdviceNumber] = useState(null)
   const buttonHandeler = async()=>{
     const randomNum = Math.floor(Math.random() * (100 - 1) + 1);
-    console.log(randomNum)
     const response = await fetch('https://api.adviceslip.com/advice/'+randomNum);
     const {slip:data} = await response.json()
     setAdviceNumber(randomNum)
     setAdvice(data.advice)
-    console.log(data.advice)
   }
 
 
