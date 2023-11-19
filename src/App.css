@@ -1,42 +1,66 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-color: hsl(218, 23%, 16%);
+font-size: 16px;
+}
+
+.container{
+  width: clamp(300px, 80vw, 600px);
+  background-color:hsl(217, 19%, 24%) ;
   text-align: center;
+  border-radius: 1.6em;
+}
+.container main{
+  padding: 2em 1.8em;
+  margin:0 2rem;
+}
+.container p{
+  position: relative;
+  margin-top: 1em;
+  color:hsl(150, 100%, 66%);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.container h1{
+  font-size: clamp(1rem, 50vw, 1.8rem);
+  margin: 0.6em 0;
+  margin-bottom: 1.2em;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container_foot{
+  margin-bottom:2em ;
+}
+.container_foot img{
+  width: clamp(160px, 50vw, 460px);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.round_button{
+  position: relative;
+  bottom: 3.5%;
+  background-color:hsl(150, 100%, 66%);
+  border-radius: 50%;
+  border: none;
+}
+.round_button img{
+padding: 20px;
+padding-bottom: 17px;
 }
 
-.card {
-  padding: 2em;
+@media screen and (max-width:487px){
+  .container_foot img{
+    content: url(./assets/pattern-divider-mobile.svg) ;
+  };
 }
 
-.read-the-docs {
-  color: #888;
+
+.round_button:hover
+{
+box-shadow: hsl(150, 100%, 66%) 0px 0px 40px;
+cursor: pointer;
 }
