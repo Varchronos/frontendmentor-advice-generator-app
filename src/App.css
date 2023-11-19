@@ -51,19 +51,17 @@ font-size: 16px;
 padding: 20px;
 padding-bottom: 17px;
 }
-.round_button:hover
-{
-box-shadow: hsl(150, 100%, 66%) 0px 0px 40px;
-cursor: pointer;
-}
 
 @media screen and (max-width:487px){
   .container_foot img{
     content: url(./assets/pattern-divider-mobile.svg) ;
   };
-  .round_button:hover{
-    box-shadow: none;
-  }
+}
+
+.round_button:hover
+{
+box-shadow: hsl(150, 100%, 66%) 0px 0px 40px;
+cursor: pointer;
 }
 
 
